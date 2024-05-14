@@ -1,5 +1,4 @@
 @media screen and (min-width: 375px) {
-
   /* bodycolor */
   .pagefirst {
     background-color: white;
@@ -21,7 +20,10 @@
     height: 2%;
     width: 93%;
     background-color: white;
+  }
 
+  .menu {
+    display: none;
   }
 
   .h1 {
@@ -36,6 +38,7 @@
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 130%;
+
     /* line-height: 111%; */
     text-align: center;
     color: #6070ff;
@@ -49,17 +52,6 @@
     line-height: 150%;
     color: #344563;
   }
-
-  /* .menu {
-    display: flex;
-    align-items: center;
-  }
-
-  .menu a {
-    text-decoration: none;
-    /* padding: 0 5px; 
-    color: black;
-  } */
 
   .menu-icon {
     font-size: medium;
@@ -99,66 +91,59 @@
     width: 93%;
     height: auto;
     padding-bottom: 30%;
-
   }
 
   /* the pages */
-  .page1 {
+  .pages {
     border: 1% solid #dfe1e6;
     border-radius: 4%;
     padding: 5%;
     width: 85%;
     height: 619%;
     background-color: white;
-    margin-top: 22%;
+    margin-top: 20%;
   }
 
-  .page1 ul {
+  .pages ul {
     width: 80%;
     height: 30%;
     display: flex;
     justify-content: space-between;
-
   }
 
-  .page1 b {
+  .pages b {
     font-size: 100%;
-
   }
 
-  .page1 ul li {
+  .pages ul li {
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 69%;
     color: #7a869a;
   }
 
-  .page1 p {
+  .pages p {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 100%;
     color: #344563;
   }
 
-  .page1 h1 {
+  .pages h1 {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 200%;
     color: #172b4d;
   }
 
-  .page1list {
+  .pageslist {
     gap: 10%;
     width: 35%;
-    /* height: 24%; */
     display: flex;
     justify-content: space-between;
-
-
-
   }
 
-  .page1list a {
+  .pageslist a {
     border-radius: 20%;
     padding: 4% 12%;
     width: 120%;
@@ -170,8 +155,6 @@
     color: #6070ff;
     list-style-type: none;
     text-decoration: none;
-
-
   }
 
   .button {
@@ -181,7 +164,6 @@
     width: 45%;
     height: 48px;
     margin-top: 20%;
-
   }
 
   /* about  */
@@ -191,7 +173,6 @@
     margin-top: 15%;
     border-top-right-radius: 10%;
     background-color: white;
-
   }
 
   .about-myself h1 {
@@ -200,7 +181,6 @@
     font-size: 300%;
     line-height: 130%;
     color: #172b4d;
-
     margin-top: 30%;
   }
 
@@ -209,23 +189,19 @@
     font-weight: 400;
     font-size: 100%;
     color: #344563;
-
   }
 
   .button1 {
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 100%;
-    letter-spacing: 0.03em;
     color: #396df2;
-    border: 1% solid #6070ff;
     border-radius: 8%;
     padding: 3%;
     width: 50%;
     height: 60%;
-    margin-top: 20%;
+    margin-top: 15%;
     border: #396df2 solid;
-
   }
 
   /* language */
@@ -244,8 +220,6 @@
     line-height: 120%;
     color: #000;
     text-decoration: none;
-
-
   }
 
   .topp {
@@ -255,7 +229,6 @@
     align-items: center;
     width: 130%;
     height: 72px;
-
   }
 
   .fw {
@@ -283,7 +256,6 @@
   .Progarmingimg img {
     max-width: 25%;
     height: 10%;
-
   }
 
   .jhc {
@@ -292,7 +264,6 @@
     font-size: 100%;
     color: #253858;
     margin-top: 10%;
-
   }
 
   /* contact information  */
@@ -300,8 +271,7 @@
     background-image: url(css/image/image.png);
     background-size: cover;
     width: 93%;
-    height: 700px;
-
+    height: 800px;
   }
 
   .contact-info p {
@@ -311,7 +281,6 @@
     line-height: 140%;
     text-align: center;
     color: #ebebff;
-
   }
 
   .contact-info h4 {
@@ -334,9 +303,7 @@
   form {
     width: 100%;
     max-width: 93%;
-
     border-radius: 5%;
-
   }
 
   input {
@@ -346,7 +313,6 @@
     width: 80%;
     height: 15%;
     border-radius: 10%;
-
   }
 
   textarea {
@@ -357,15 +323,127 @@
     padding: 8%;
     border-radius: 10%;
     background: #fff;
-
   }
 
   input[type="submit"] {
-    margin-top: 5%;
+    margin-top: 1%;
     width: 40%;
     height: 30%;
     border-radius: 15%;
-    padding: 3%;
     color: blue;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu a {
+    text-decoration: none;
+    padding: 0 5px;
+    color: black;
+  }
+
+  .all {
+    width: auto;
+  }
+
+  .main {
+    width: auto;
+  }
+
+  /* the pages for desktop  */
+
+  .pages {
+    display: flex;
+    margin-top: 10%;
+  }
+
+  .pages:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+    cursor: pointer;
+  }
+
+  .enlarge {
+    width: 180%;
+    height: 100%;
+  }
+
+  .page2 {
+    margin: auto;
+    margin-left: 25%;
+  }
+
+  .page3 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .formate {
+    margin: auto;
+  }
+
+  .enlarge2 {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* about my self */
+  .about-myself {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+  }
+
+  .left,
+  .right {
+    flex: 1;
+  }
+
+  .left {
+    margin-block-start: 10%;
+    margin-bottom: 5%;
+  }
+
+  .right {
+    margin-top: 10%;
+    margin-block-end: 10%;
+  }
+
+  .button1 {
+    margin-top: 5%;
+  }
+
+  /* contact form */
+  .contact-info {
+    background-image: url(css/image/image.png);
+    background-size: cover;
+    width: auto;
+    height: 900px;
+  }
+
+  .contact-content {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  input {
+    height: 10%;
+  }
+
+  input[type="submit"] {
+    height: 10%;
+  }
+
+  textarea {
+    height: 30%;
   }
 }

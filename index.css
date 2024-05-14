@@ -21,7 +21,7 @@
     height: 2%;
     width: 93%;
     background-color: white;
-   
+
   }
 
   .h1 {
@@ -99,8 +99,6 @@
     width: 93%;
     height: auto;
     padding-bottom: 30%;
-   
-
 
   }
 
@@ -298,7 +296,7 @@
     background-image: url(css/image/image.png);
     background-size: cover;
     width: 93%;
-    height: 150vh;
+    height: 130vh;
 
   }
 
@@ -359,10 +357,10 @@
   }
 
   input[type="submit"] {
-    margin-top: 10%;
+    margin-top: 5%;
     width: 40%;
     border-radius: 15%;
-    padding: 5%;
+    padding: 3%;
     color: blue;
   }
 }
